@@ -1,0 +1,2043 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &199949517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 199949518}
+  - component: {fileID: 199949519}
+  m_Layer: 0
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &199949518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199949517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.267554, y: 4.162885, z: -3.1695197}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &199949519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199949517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c46d8addd4a31949bd48d4cb402442a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabCase: {fileID: 1562889343227814576, guid: 9c5c510d8247983429db570acf8c784b,
+    type: 3}
+  prefabMeleeTeamOne: {fileID: 1938520119408581297, guid: 55ad6e1473b71e049a73c85907c6f5cc,
+    type: 3}
+  prefabMeleeTeamTwo: {fileID: 8882959357018542018, guid: 3d171fcaa83bd0b43a0c3bb8630f4802,
+    type: 3}
+  prefabDistanceTeamOne: {fileID: 5543076259080308274, guid: 33b38f1021d0045409f7792e6612a0ae,
+    type: 3}
+  prefabDistanceTeamTwo: {fileID: 5598678831446300048, guid: ded7c7d2a0504504abca0fb81fdd4390,
+    type: 3}
+  prefabIaOne: {fileID: 1562889343227814576, guid: ae26c50f7cb5b6a40b8e7d7b1c09263b,
+    type: 3}
+  prefabIaTwo: {fileID: 1562889343227814576, guid: a9968d9984521e246b1f3bb111c0e104,
+    type: 3}
+  prefabWall: {fileID: 4057455641898245390, guid: 6eb353f07f8da5649b6ac09c9ec4a5cf,
+    type: 3}
+  sizeCase: 1
+  iasOne: []
+  iasTwo: []
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 12
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.52, y: 6.84, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527551027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 527551029}
+  - component: {fileID: 527551028}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &527551028
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527551027}
+  m_Enabled: 1
+  serializedVersion: 9
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &527551029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527551027}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: -1.749933, y: -4.507488, z: -30.013765}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &925839969 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 8958504102345779247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be328555e72303489fd23d75fa4be42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1243197809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+    type: 3}
+  m_PrefabInstance: {fileID: 2270019192715108231}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd4812ad7cd17d428a298741a1ea248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &2270019192715108231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2270019193619607287, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_Name
+      value: IaManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaOne.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: iaTypeOne.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: iaTypeTwo.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[1].column
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[1].line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 925839969}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[0].line
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[0].line
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[1].line
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[1].column
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[0].column
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: iaTypeOne.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[2].column
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[2].line
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[2].column
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[2].line
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: iaTypeOne.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: iaTypeTwo.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: ia.IsAlive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].Behavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].Pos.column
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[0].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].Pos.column
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].Pos.line
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].Pos.column
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].Pos.line
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].Pos.column
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].Pos.line
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].Pos.column
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].Pos.line
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].Pos.column
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].Pos.line
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].Pos.line
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[3].Behavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].Pos.column
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].Pos.line
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[3].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[0].Behavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[1].Behavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[1].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[2].Behavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[4].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[5].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[6].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[7].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[8].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[9].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[10].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[11].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[12].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[13].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[14].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[15].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[16].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[17].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[18].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[19].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[20].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[21].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[22].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[23].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[24].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[25].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[26].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[27].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[28].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[29].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[30].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[31].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[32].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].Pos.column
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].Pos.line
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].MovePoints
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].ActionPoints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].Hp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].Damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamOne.Array.data[33].Behavior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607286, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: statsIaTeamTwo.Array.data[2].Behavior
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.567462
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1107354
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.0859375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270019193619607285, guid: 2bf1a73841a3b85488c273b605678695,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2bf1a73841a3b85488c273b605678695, type: 3}
+--- !u!1001 &8958504102345779247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8958504101690713127, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_Name
+      value: Grid
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaOne.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaTwo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: iaTypeOne.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: iaTypeTwo.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: nbLines
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: nbColumns
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: prefabCube
+      value: 
+      objectReference: {fileID: 1562889343227814576, guid: 9c5c510d8247983429db570acf8c784b,
+        type: 3}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[0].column
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[0].line
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[1].column
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaOne.Array.data[1].line
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[0].column
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[0].line
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[1].column
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbEquipeIaTwo.Array.data[1].line
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: IaManager
+      value: 
+      objectReference: {fileID: 1243197809}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: IaOne
+      value: 
+      objectReference: {fileID: 3095329272865392999, guid: 0ef418f4e9c08c84bbb86af50d04cbd7,
+        type: 3}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: IaOneSprite
+      value: 
+      objectReference: {fileID: 3095329272865392999, guid: 0ef418f4e9c08c84bbb86af50d04cbd7,
+        type: 3}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbLines
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 394792033, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
+      propertyPath: NbColumns
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958504101690713125, guid: 5de90c3592d67e646aa5ff04b5dd43ff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5de90c3592d67e646aa5ff04b5dd43ff, type: 3}
